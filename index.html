@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mingjia Zhang</title>
+  <style>
+    /* ---------- RESET & BASE ---------- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Georgia', 'Times New Roman', serif;
+      font-size: 1.05rem;
+      line-height: 1.5;
+      color: #1a1a1a;
+      background: #ffffff;
+      padding: 1.9rem 1.5rem;
+      -webkit-font-smoothing: antialiased;
+    }
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+    }
+
+    /* ---------- TYPOGRAPHY ---------- */
+    h1 {
+      font-size: 1.8rem;
+      font-weight: 500;
+      letter-spacing: -0.01em;
+      margin-top: 1rem;
+      margin-bottom: 0.6rem;
+      color: #000000;
+    }
+    .subhead {
+      font-size: 0.85 rem;
+      color: #555555;
+      margin-bottom: 1.0rem;
+    }
+    h2 {
+      font-size: 1.4rem;
+      font-weight: 300;
+      letter-spacing: 0.03em;
+      text-transform: capitalize;
+      color: #333333;
+      margin-top: 5rem;
+      margin-bottom: 0.8rem;
+      border-top: 1px solid #eeeeee;
+      padding-top: 2.8rem;
+    }
+    h2:first-of-type {
+      border-top: none;
+      padding-top: 0;
+      margin-top: 2.8rem;
+    }
+    p {
+      margin-bottom: 0.8rem;
+    }
+    a {
+      color: #1a1a1a;
+      text-decoration: none;
+      border-bottom: 1px solid #cccccc;
+      transition: border-color 0.2s;
+    }
+    a:hover {
+      border-bottom-color: #000000;
+    }
+
+    /* ---------- LISTS ---------- */
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    ul li {
+      margin-bottom: 0.15rem;
+      padding-left: 1.2rem;
+      text-indent: -1.2rem;
+    }
+    ul li::before {
+      content: "— ";
+      color: #aaaaaa;
+    }
+
+    /* ---------- CONTACT ---------- */
+    .contact {
+      margin: 1.2rem 0 2rem 0;
+      padding: 0.8rem 0;
+      border-top: 1px solid #eeeeee;
+      border-bottom: 1px solid #eeeeee;
+      font-size: 0.95rem;
+      color: #444444;
+    }
+    .contact a {
+      border-bottom: 1px solid #dddddd;
+    }
+
+    /* ---------- PUBLICATIONS (plain text) ---------- */
+    .pub {
+      padding-left: 1.8rem;
+      line-height: 1.8;
+      font-weight: 300;
+      font-size: 0.9rem;
+    }
+   .pub::before {
+      content: "• ";           
+      color: #333333;         
+    }
+    .pub .title {
+      font-weight: 300;
+      font-size: 0.9rem;
+    }
+    .pub .authors {
+      font-style: italic;
+      color: #333333;
+    }
+    .pub .journal {
+      color: #555555;
+    }
+    .pub .links {
+      font-size: 0.85rem;
+      color: #777777;
+    }
+    .pub .links a {
+      border-bottom: 1px solid #dddddd;
+      color: #555555;
+    }
+
+    /* ---------- TEACHING / TALKS ---------- */
+    .entry {
+      margin-top: 3.5rem
+      margin-bottom: 0.5rem;
+      font-size: 0.95rem;
+    }
+    .entry .meta {
+      color: #555555;
+      font-size: 0.95rem;
+    }
+
+    /* ---------- FOOTER ---------- */
+    .footer {
+      margin-top: 3rem;
+      padding-top: 1rem;
+      border-top: 1px solid #eeeeee;
+      font-size: 0.85rem;
+      color: #999999;
+      text-align: center;
+    }
+    .footer a {
+      color: #666666;
+      border-bottom: 1px solid #dddddd;
+    }
+
+    /* ---------- RESPONSIVE ---------- */
+    @media (max-width: 600px) {
+      body { padding: 1.5rem 1rem; font-size: 0.95rem; }
+      h1 { font-size: 2.2rem; }
+      .container { max-width: 100%; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+
+  <!-- ===== HEADER ===== -->
+  <header>
+    <h1>Mingjia Zhang</h1>
+    <div class="subhead">
+      I am an assistant professor in the math department at Princeton University. I am interested in arithmetic geometry, in particular, p-adic Hodge theory and the Langlands program. I completed my PhD at Bonn University in 2023, under the supervision of Prof. Dr. Peter Scholze.
+    </p>
+  </header>
+
+  <!-- ===== CONTACT ===== -->
+  <div class="contact">
+    <a>Email: mz9413 AT princeton Dot edu</a> &nbsp;·&nbsp; <a>Office: Fine Hall 1007</a>
+  </div>
+
+  <!-- ===== PUBLICATIONS ===== -->
+  <section>
+
+    <h2>(Pre-)publications</h2>
+
+    <div class="pub">
+      <span class="title"><a href="https://arxiv.org/abs/2607.25889">Intersection Cohomology of Igusa stacks</a></span>,
+      <span class="authors">with Ana Caraiani and Linus Hamann</span>
+      <span class="journal">(2026)</span>
+    </div>
+
+    <div class="pub">
+      <span class="title"><a href="https://arxiv.org/abs/2603.24921">Igusa stacks and the cohomology of Shimura varieties II</a></span>,
+      <span class="authors">with Patrick Daniels, Pol van Hoften and Dongryul Kim</span>
+      <span class="journal">(2026)</span>
+    </div>
+
+    <div class="pub">
+      <span class="title"><a href="https://arxiv.org/abs/2408.01348">Igusa stacks and the cohomology of Shimura varieties</a></span>,
+      <span class="authors">with Patrick Daniels, Pol van Hoften and Dongryul Kim</span>
+      <span class="journal">(2024)</span>
+    </div>
+
+    <div class="pub">
+      <span class="title"><a href="https://arxiv.org/abs/2403.19771">On a conjecture of Pappas-Rapoport</a></span>,
+      <span class="authors">with Patrick Daniels, Pol van Hoften and Dongryul Kim</span>,
+      <span class="journal">Math. Ann. 395, 31 (2026)</span>
+    </div>
+
+    <div class="pub">
+      <span class="title"><a href="https://arxiv.org/abs/2308.13456">p-adic Simpson correspondences for principal bundles in abelian settings</a></span>,
+      <span class="authors">Ben Heuer and Annette Werner</span>,
+      <span class="journal">Canad. J. Math. (2025)</span>
+    </div>
+
+    <div class="pub">
+      <span class="title"><a href="https://arxiv.org/abs/2309.05152">A PEL type Igusa stack and the p-adic geometry of Shimura varieties</a></span>,
+      <span class="journal">Camb. J. Math., Vol. 14, 2 (2026)</span>
+    </div>
+
+  </section>
+
+
+  <!-- ===== Other Writings ===== -->
+  <section>
+    <h2>Other writings</h2>
+
+    <div class="pub">
+      <span class="title"><a href="pdfs/SimpsonNotes.pdf">p-adic Simpson correspondence via gerbes</a></span>, 
+      <span class="journal">Notes for '<a href="https://brinmrc.umd.edu/fall25-casc/">Complex and p-Adic Simpson Correspondence</a>' workshop at Brin Center, 2025</span>
+    </div>
+
+
+    <div class="pub">
+      <span class="title"><a href="pdfs/Oberwolfach25.pdf">The local Plectic Conjectures</a></span>,
+      <span class="journal">Oberwolfach report (2025)</span>
+    </div>
+
+    <div class="pub">
+      <span class="title"><a href="pdfs/Oberwolfach24.pdf">Hodge type Igusa stacks and cohomology of Shimura varieties</a></span>,
+      <span class="journal">Oberwolfach report (2024)</span>
+    </div>
+
+   </section>
+
+  <!-- ===== TEACHING ===== -->
+  <section>
+    <h2>Teaching</h2>
+    <div class="entry">
+      <span style="font-weight:600;">Math 345:</span> 
+      <span style="font-weight:300">Algebra I</span> 
+      <span class="meta">(Fall 2026)</span>
+    </div>
+    <div class="entry">
+      <span style="font-weight:600;">Math 518:</span> 
+      <span style="font-weight:300">Shimura varieties</span>
+      <span class="meta">(Spring 2025)</span>
+    </div>
+    <div class="entry">
+      <span style="font-weight:600;">Math 103:</span>
+      <span style="font-weight:300">Calculus I</span>
+      <span class="meta">(Fall 2024)</span>
+    </div>
+  </section>
+
+  <!-- ===== SEMINARS ===== 
+  <section>
+    <h2>Teaching</h2>
+    <div class="entry">
+      <span style="font-weight:600;">Math 345:</span> 
+      <span style="font-weight:300">Algebra I</span> 
+      <span class="meta">(Fall 2026)</span>
+    </div>
+    <div class="entry">
+      <span style="font-weight:600;">Math 518:</span> 
+      <span style="font-weight:300">Shimura varieties</span>
+      <span class="meta">(Spring 2025)</span>
+    </div>
+    <div class="entry">
+      <span style="font-weight:600;">Math 103:</span>
+      <span style="font-weight:300">Calculus I</span>
+      <span class="meta">(Fall 2024)</span>
+    </div>
+  </section> -->
+
+  <!-- ===== FOOTER ===== -->
+  <div class="footer">
+    &copy; 2026 Mingjia Zhang &nbsp;·&nbsp;
+    Last updated: August 2026
+  </div>
+
+</div>
+</body>
+</html>
